@@ -139,29 +139,50 @@
 
   <body>
         <br>
-        <center><span style="font-size:46px;font-weight:bold;">Zero-Shot Visual Imitation</span></center>
-
-        <div align=center style="font-size:24px">
-        <p style="padding-top:10px">
-        Deepak Pathak*, Parsa Mahmoudieh*, Guanghao Luo*, Pulkit Agrawal* <br>
-        Dian Chen, Yide Shentu, Evan Shelhamer, Jitendra Malik, Alexei A. Efros, Trevor Darrell
-        <p>
-        </div>
-         <table align=center width=600px style="padding-top:0px;padding-bottom:20px">
-          <tr>
-            <td align=center width=600px><center><span style="font-size:24px">University of California, Berkeley</span></center></td>
-          <tr/>
-        </table>
-        <table align=center width=400px>
+        <center><span style="font-size:44px;font-weight:bold;">Zero-Shot Visual Imitation</span></center><br/>
+        <table align=center width=800px>
           <tr>
             <td align=center width=150px>
-            <center><span style="font-size:24px"><a href="https://openreview.net/forum?id=BkisuzWRW" target="_blank">ICLR 2018</a></span></center></td>
+            <center><span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~pathak/" target="_blank">Deepak Pathak*</a></span></center></td>
+            <td align=center width=200px>
+            <center><span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~parsa.m/" target="_blank">Parsa Mahmoudieh*</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="https://www.linkedin.com/in/michael-luo-951b08153/" target="_blank">Guanghao Luo*</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~pulkitag/" target="_blank">Pulkit Agrawal*</a></span></center></td>
+            <td align=center width=110px>
+            <center><span style="font-size:22px"><a href="https://dianchen96.github.io/" target="_blank">Dian Chen</a></span></center></td>
+          <tr/>
+         </table>
+         <table align=center width=800px>
+          <tr>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="https://fredshentu.github.io/" target="_blank">Yide Shentu</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="http://imaginarynumber.net/" target="_blank">Evan Shelhamer</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~efros/" target="_blank">Alexei A. Efros</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a></span></center></td>
+          <tr/>
+         </table>
+        <table align=center width=600px style="padding-top:0px;padding-bottom:20px">
+          <tr>
+            <td align=center width=600px><center><span style="font-size:22px">University of California, Berkeley</span></center></td>
+          <tr/>
+        </table>
+        <table align=center width=600px>
+          <tr>
+            <td align=center width=650px>
+            <center><span style="font-size:22px"><a href="https://openreview.net/forum?id=BkisuzWRW" target="_blank">ICLR 2018</a></span></center></td>
           <tr/>
         </table>
         <table align=center width=500px>
           <tr>
-            <td align=center width=200px><center><span style="font-size:24px"><a href="resources/iclr18.pdf">[ArXiv Link]</a></span></center></td>
-            <td align=center width=200px><center><span style="font-size:24px"><a href='https://github.com/pathak22/zeroshot-imitation'>[Github Code]</a></span></center></td>
+            <td align=center width=200px><center><span style="font-size:22px"><a href="resources/iclr18.pdf">[Download Paper]</a></span></center></td>
+            <td align=center width=200px><center><span style="font-size:22px"><a href='https://github.com/pathak22/zeroshot-imitation'>[Github Code]</a></span></center></td>
           <tr/>
         </table><br/>
 
@@ -188,22 +209,23 @@ Through further experiments in VizDoom simulation, we provide evidence that bett
       <hr>
 
         <center id="sourceCode"><h1>Source Code and Demo</h1></center>
-        <center>We have released the TensorFlow based implementation for on the github page. It builds upon OpenAI Gym with factorized RL environment wrappers which are generally useful. Try our code!</center>
+        <div style="width:800px; margin:0 auto; text-align=center">
+        We have released the TensorFlow based implementation on the github page. It builds upon OpenAI Gym with factorized RL environment wrappers. Try our code!
+        </div>
         <table align=center width=900px>
         <tr>
           <!-- <p style="margin-top:4px;"></p> -->
           <td width=300px align=center>
-            <span style="font-size:34px"><a href='https://github.com/pathak22/zeroshot-imitation'>[GitHub]</a></span>
+            <span style="font-size:28px"><a href='https://github.com/pathak22/zeroshot-imitation'>[GitHub]</a></span>
           </td>
         </tr>
         </table>
-
       <br>
       <hr>
 
         <center id="sourceCode"><h1>Goal-Conditioned Skill Policies (GSP)</h1></center>
         <div style="width:800px; margin:0 auto; text-align=center">
-            Instead of imitation learning, we propose a paradigm in which an agent learns in order to imitate. Our agent learns a forward dynamics model and an inverse dynamics model. Using both, we perform joint optimization on trajectories that our agent collects through self-supervision.
+          We pursue an alternative paradigm wherein an agent first explores the world without any expert supervision and then distills its experience into a goal-conditioned skill policy with a novel forward consistency loss. The key insight is the intuition that, for most tasks, reaching the goal is more important than how it is reached.
         </div>
         <table align=center width=1000px>
           <p style="margin-top:4px;"></p>
@@ -311,9 +333,9 @@ Through further experiments in VizDoom simulation, we provide evidence that bett
         <table align=center width=850px>
           <center><h1>Paper</h1></center>
           <tr>
-          <td width=400px align=left>
+          <td width=250px align=left>
           <!-- <p style="margin-top:4px;"></p> -->
-          <a href="resources/iclr18.pdf"><img style="height:200px" src="resources/iclr18_thumbnail.jpeg"/></a>
+          <a href="resources/iclr18.pdf"><img style="height:150px" src="resources/iclr18_thumbnail.jpeg"/></a>
           <center>
           <span style="font-size:20pt"><a href="resources/iclr18.pdf">[Paper]</a>&nbsp;
           <span style="font-size:20pt"><a href="https://arxiv.org/abs/1705.05363">[arXiv]</a>
@@ -321,7 +343,7 @@ Through further experiments in VizDoom simulation, we provide evidence that bett
           </td>
           <td width=50px align=center>
           </td>
-          <td width=450px align=left>
+          <td width=550px align=left>
           <!-- <p style="margin-top:4px;"></p> -->
           <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Deepak Pathak, Parsa Mahmoudieh, Guanghao Luo, Pulkit Agrawal, Dian Chen, Yide Shentu, Evan Shelhamer, Jitendra Malik, Alexei A. Efros and Trevor Darrell. <b>Zero-Shot Visual Imitation<br/></b> In <i>ICLR 2018</i>.</span></p>
           <!-- <p style="margin-top:20px;"></p> -->
@@ -329,11 +351,11 @@ Through further experiments in VizDoom simulation, we provide evidence that bett
           </td>
           </tr>
           <tr>
-          <td width=350px align=left>
+          <td width=250px align=left>
           </td>
-          <td width=100px align=center>
+          <td width=50px align=center>
           </td>
-          <td width=450px align=left>
+          <td width=550px align=left>
             <div class="paper" id="iclr18_bib">
 <pre xml:space="preserve">
 @inproceedings{pathakICLR18zeroshot,
@@ -359,7 +381,7 @@ Through further experiments in VizDoom simulation, we provide evidence that bett
       <table align=center width=800px>
         <tr><td width=800px><left>
         <center><h1>Acknowledgements</h1></center>
-        We would like to thank members of BAIR for fruitful discussions and comments. This work was supported in part by DARPA; NSF IIS-1212798, IIS-1427425, IIS-1536003, Berkeley DeepDrive, and an equipment grant from NVIDIA. DP is supported by NVIDIA and Snapchat's graduate fellowships. <br>
+        We would like to thank Pieter Abbeel, Sergey Levine and other members of BAIR for fruitful discussions and comments. This work was supported in part by DARPA; NSF IIS-1212798, IIS-1427425, IIS-1536003, Berkeley DeepDrive, and an equipment grant from NVIDIA and the Valrhona Reinforcement Learning Fellowship. DP is supported by NVIDIA and Snapchat’s graduate fellowships.<br>
         </left></td></tr>
       </table>
     <br><br>
