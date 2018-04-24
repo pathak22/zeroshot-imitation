@@ -1,8 +1,10 @@
-## Zero-Shot Visual Imitation
-Deepak Pathak\*, Parsa Mahmoudieh\*, Guanghao Luo\*, Pulkit Agrawal\*, Dian Chen, <br/>Yide Shentu, Evan Shelhamer, Jitendra Malik, Alexei A. Efros, Trevor Darrell<br/>
-University of California, Berkeley
+## Zero-Shot Visual Imitation ##
+#### In ICLR 2018 [[Project Website]](https://pathak22.github.io/zeroshot-imitation/) [[Videos]](http://pathak22.github.io/zeroshot-imitation/index.html#demoVideos)
 
-![Baxter Gif](https://people.eecs.berkeley.edu/%7Epathak/images/iclr18_2.gif)
+Deepak Pathak\*, Parsa Mahmoudieh\*, Guanghao Luo\*, Pulkit Agrawal\*, Dian Chen, <br/>Yide Shentu, Evan Shelhamer, Jitendra Malik, Alexei A. Efros, Trevor Darrell<br/>
+University of California, Berkeley<br/>
+
+<img src="https://pathak22.github.io/zeroshot-imitation/resources/turtle.gif" width="300">    <img src="https://pathak22.github.io/zeroshot-imitation/resources/baxter.gif" width="300">
 
 This is the implementation for the [ICLR 2018 paper Zero Shot Visual Imitation](https://pathak22.github.io/zeroshot-imitation). We propose an alternative paradigm wherein an agent first explores the world without any expert supervision and then distills its experience into a goal-conditioned skill policy with a novel forward consistency loss. The key insight is the intuition that, for most tasks, reaching the goal is more important than how it is reached.
 
@@ -86,3 +88,4 @@ Note that the accuracies presented is not a good measure of real world performan
 ### 2) Other resources
   - [Paper](https://pathak22.github.io/zeroshot-imitation/resources/iclr18.pdf)
   - [Project Website](https://pathak22.github.io/zeroshot-imitation/)
+  - [Videos](http://pathak22.github.io/zeroshot-imitation/index.html#demoVideos)
