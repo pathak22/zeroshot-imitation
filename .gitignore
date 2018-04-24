@@ -1,6 +1,7 @@
-**/__pycache__
-**pyc
-**npy
-tmp/
-zeroshot
-src/vizdoom.ini
+*.npy
+*.pyc
+*.swp
+**/datasets
+**/results/*
+caffe/
+venv/
