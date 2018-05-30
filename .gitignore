@@ -1,4 +1,3 @@
-*.npy
 *.pyc
 *.swp
 **/datasets

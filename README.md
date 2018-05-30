@@ -55,12 +55,12 @@ make runtest -j
 #### Data setup
 Data can be downloaded at [google drive link](https://drive.google.com/file/d/1pnX8gGqs5EQVjGy4Z6FZ5oZ9noDHlC_8/view). This is the same data as used in [Combining Self-Supervised Learning and Imitation for Vision-Based Rope Manipulation](https://ropemanipulation.github.io).
 
-You will need the rope9 dataset and img_mean.npy from this download.
+You will need the rope dataset from this download.
 
 Then, download the AlexNet weights, bvlc_alexnet.npy from [here](https://www.cs.toronto.edu/~guerzhoy/tf_alexnet/)
 
-- put rope9 data in data/datasets/rope9
-- put img_mean.npy in data/img_mean.npy
+- put rope data in data/datasets/rope9
+- it is important to name it rope9!
 - put bvlc_alexnet.npy in nets/bvlc_alexnet.npy
 
 #### Training
